@@ -1,0 +1,18 @@
+.header{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.section{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.TabClass{
+width: 100%;
+}
