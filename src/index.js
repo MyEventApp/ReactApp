@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './components/layout';
+import Layout from './components/Layout';
+import LandingPage from './components/LandingPage';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import './css/index.css';
+import './css/style.css';
+import Flex from '../node_modules/flexboxgrid/css/flexboxgrid.css';
 
 
-ReactDOM.render(<div>
+ReactDOM.render(
   <MuiThemeProvider>
   <div>
+
+  <LandingPage />
   <Layout/>
+
   </div>
-   </MuiThemeProvider>
-   </div>, document.getElementById('root'));
+   </MuiThemeProvider>, document.getElementById('root'));

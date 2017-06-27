@@ -6,14 +6,8 @@ import Dashboard from './Dashboard';
 import '../css/style.css';
 
 const styles = {
-  headline: {
-    fontSize: 24,
-    paddingTop: 16,
-    marginBottom: 12,
-    fontWeight: 400,
-  },
   slide: {
-    padding: 10,
+    padding: 0,
   },
 };
 
@@ -47,11 +41,11 @@ export default class Tabss extends React.Component {
           onChangeIndex={this.handleChange}
         >
           <div>
-          <Dashboard />
+        <Dashboard />
 
           </div>
           <div style={styles.slide}>
-            slide n°2
+          <h2>dankhnkjbhkihk</h2>
           </div>
 
         </SwipeableViews>
