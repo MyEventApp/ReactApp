@@ -11,6 +11,8 @@
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "react-bootstrap": "^0.31.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.7",
     "react-swipeable-views": "^0.12.3",
     "react-tap-event-plugin": "^2.0.1"

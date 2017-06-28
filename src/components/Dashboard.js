@@ -1,4 +1,5 @@
   import React, { Component} from 'react';
+  import {Link} from 'react-router-dom';
   import {Card, CardMedia, CardText} from 'material-ui/Card';
   import Paper from 'material-ui/Paper';
   import IconButton from 'material-ui/IconButton';
@@ -33,9 +34,9 @@
 
     return (
     <div className='col-xs-12' style={styles.dashboard}>
-
+    <Link to='/details'>
     <div>
-    <Paper zDepth={1} rounded={true} style={styles.paper} >
+    <Paper zDepth={1} rounded={true} style={styles.paper}>
     <div className='row'>
     <div className='col-xs-8'>
     <p style={styles.content}><strong>Event Name</strong></p>
@@ -48,7 +49,6 @@
    </div>
    </Paper>
    </div>
-
 
    <div>
    <Paper zDepth={1} rounded={true} style={styles.paper}>
@@ -110,7 +110,7 @@
 </div>
 </Paper>
 </div>
-
+</Link>
 
    </div>
   );

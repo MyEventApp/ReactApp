@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import { Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import Paper from 'material-ui/Paper';
 import Dashboard from './Dashboard';
 import Filter from '../images/Filter.png';
@@ -14,6 +15,7 @@ const styles = {
 };
 
 const LandingPage = () => (
+
   <div className='col-xs-12 section'>
   <div className='row' >
     <div className='col-xs-6'>
@@ -35,7 +37,6 @@ const LandingPage = () => (
   <div className='row'>
   <Dashboard />
   </div>
-
   </div>
 );
 

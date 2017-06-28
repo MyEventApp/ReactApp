@@ -25,7 +25,7 @@ const styles=
       height: '50px',
     },
     menus:{
-      color:'#c3c0c0',
+      color:'#c5c6c7',
     }
 };
 
@@ -54,7 +54,7 @@ class Layout extends Component {
          width={200}
          open={this.state.open}
          onRequestChange={(open) => this.setState({open})}
-         containerStyle={{backgroundColor:'#424242'}} >
+         containerStyle={{backgroundColor:'#333132'}} >
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>Home</MenuItem><Divider style={{backgroundColor:'black'}}/>
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>Create Event</MenuItem><Divider style={{backgroundColor:'black'}} />
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>My Events</MenuItem><Divider style={{backgroundColor:'black'}} />
