@@ -7,7 +7,6 @@ import backbutton from '../images/back-button.png';
 import rightarrow from '../images/RIght-arrow-Icons.png';
 import clock from '../images/clock.png';
 import '../css/style.css';
-
 const styles={
  paper:{
      background: '#FFD93A ',
@@ -26,22 +25,20 @@ const styles={
      marginTop:"31px"
    }
    };
-
-   class AgendaList extends Component  {
+   class MySchedule extends Component  {
  render() {
  return (
    <div className='col-xs-12 section'>
    <div className='row'>
    <div className='col-xs-3'>
-   <Link to='/details'>
+   <Link to='/'>
    <p><img src={backbutton} style={{width:'40%',marginTop:"5px"}}/></p>
    </Link>
    </div>
    <div className='col-xs-9'>
-   <h4 style={styles.heading}><b>Agenda</b></h4>
+   <h4 style={styles.heading}><b>My Schedule</b></h4>
    </div>
    </div>
-   <Link to ='/agendadetails'>
    <Paper zDepth={1} rounded={true} style={styles.paper} >
    <div className='row'>
    <div className='col-xs-6'>
@@ -53,9 +50,10 @@ const styles={
    <p style={styles.time}><img src={clock} style={{width:'15%'}}/>Time </p>
    </div>
    <div className='col-xs-2'>
-   <p><img src={rightarrow} style={{width:'50%',marginTop:"35px"}}/></p>
-   </div>
-   </div>
+
+   <p><img src={rightarrow} style={{width:'50%',marginTop:"5px"}}/></p>
+</div>
+  </div>
   </Paper>
   <Paper zDepth={1} rounded={true} style={styles.paper} >
   <div className='row'>
@@ -69,7 +67,7 @@ const styles={
   </div>
   <div className='col-xs-2'>
 
-  <p><img src={rightarrow} style={{width:'50%',marginTop:"35px"}}/></p>
+  <p><img src={rightarrow} style={{width:'50%',marginTop:"5px"}}/></p>
 </div>
  </div>
  </Paper>
@@ -85,7 +83,7 @@ const styles={
  </div>
  <div className='col-xs-2'>
 
- <p><img src={rightarrow} style={{width:'50%',marginTop:"35px"}}/></p>
+ <p><img src={rightarrow} style={{width:'50%',marginTop:"5px"}}/></p>
 </div>
 </div>
 </Paper>
@@ -101,13 +99,12 @@ const styles={
 </div>
 <div className='col-xs-2'>
 
-<p><img src={rightarrow} style={{width:'50%',marginTop:"35px"}}/></p>
+<p><img src={rightarrow} style={{width:'50%',marginTop:"5px"}}/></p>
 </div>
 </div>
 </Paper>
-</Link>
   </div>
  );
 }
 }
-export default AgendaList;
+export default MySchedule;

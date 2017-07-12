@@ -1,16 +1,17 @@
 import React,{Component} from 'react';
 import Layout from '../components/Layout';
-import AgendaList from '../components/AgendaList';
-class AgendaPage extends React.Component{
+import Gallery from '../components/Gallery';
+
+class GalleryPage extends React.Component{
 
 	render(){
 		return(
       <div>
-			<AgendaList />
+			<Gallery />
 			<Layout/>
 			</div>
 			);
 	}
 };
 
-export default AgendaPage;
+export default GalleryPage;

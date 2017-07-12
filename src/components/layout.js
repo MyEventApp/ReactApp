@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
-import MenuItem from 'material-ui/MenuItem';
+import {Link} from 'react-router-dom';
+import Menu,{MenuItem} from 'material-ui/Menu';
 import Drawer from 'material-ui/Drawer';
 import Divider from 'material-ui/Divider';
 import AppBar from 'material-ui/AppBar';
@@ -46,7 +47,11 @@ class Layout extends Component {
        </AppBar>
      </header>
      <footer className="footer">
-      <AppBar style={styles.footer} title={<img src={Profile} style={{width:'45px',marginBottom:'16px'}} />} iconElementLeft={<img src={Home} style={{width:'45px',marginTop:'-5px'}} />} iconElementRight={<img src={Notifications}  style={{width:'45px',marginTop:'-5px'}} />}></AppBar>
+      <AppBar style={styles.footer} title={<Link to ='/profile'><img src={Profile}
+      style={{width:'45px',marginBottom:'16px'}} /></Link>}
+      iconElementLeft={<Link to ='/'><img src={Home} style={{width:'45px',marginTop:'-5px'}} /></Link>}
+      iconElementRight={<img src={Notifications}  style={{width:'45px',marginTop:'-5px'}} />}>
+      </AppBar>
      </footer>
      <div >
       <Drawer
@@ -55,11 +60,21 @@ class Layout extends Component {
          open={this.state.open}
          onRequestChange={(open) => this.setState({open})}
          containerStyle={{backgroundColor:'#333132'}} >
+         <Menu>
+         <Link to='/'>
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>Home</MenuItem><Divider style={{backgroundColor:'black'}}/>
+         </Link>
+         <Link to='/createevent'>
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>Create Event</MenuItem><Divider style={{backgroundColor:'black'}} />
+         </Link>
+         <Link to='/myevents'>
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>My Events</MenuItem><Divider style={{backgroundColor:'black'}} />
+         </Link>
+         <Link to='/schedule'>
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>My Schedules</MenuItem><Divider style={{backgroundColor:'black'}} />
+         </Link>
          <MenuItem onTouchTap={this.handleClose} style={styles.menus}>My Notes</MenuItem><Divider style={{backgroundColor:'black'}} />
+         </Menu>
       </Drawer>
      </div>
      </div>

@@ -1,16 +1,17 @@
 import React,{Component} from 'react';
 import Layout from '../components/Layout';
-import AgendaList from '../components/AgendaList';
-class AgendaPage extends React.Component{
+import SponsorList from '../components/SponsorList';
+
+class SponsorListPage extends React.Component{
 
 	render(){
 		return(
       <div>
-			<AgendaList />
+			<SponsorList />
 			<Layout/>
 			</div>
 			);
 	}
 };
 
-export default AgendaPage;
+export default SponsorListPage;

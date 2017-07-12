@@ -17,7 +17,7 @@ const styles = {
 const LandingPage = () => (
 
   <div className='col-xs-12 section'>
-  <div className='row' >
+  <div className='row'>
     <div className='col-xs-6'>
 
      <Button block active bsSize='small' style={styles.button}>Upcoming Events</Button>

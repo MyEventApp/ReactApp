@@ -7,6 +7,7 @@
   import img2 from '../images/eventt-image2.png';
   import img3 from '../images/eventt-image3.png';
   import img4 from '../images/eventt-image4.png';
+  import img5 from '../images/download.jpg';
   import calendar from '../images/calender.png';
   import location from '../images/location.png';
   import '../css/style.css';
@@ -44,7 +45,7 @@
     <p><img src={location} style={{width:'12%'}}/>Location</p>
     </div>
     <div className='col-xs-4'>
-     <img src={img1} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
+     <img src={img2} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
    </div>
    </div>
    </Paper>
@@ -59,7 +60,7 @@
    <h6><img src={location} style={{height:'12%',width:'12%'}}/>Location</h6>
    </div>
    <div className='col-xs-4'>
-    <img src={img1} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
+    <img src={img3} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
   </div>
   </div>
   </Paper>
@@ -75,7 +76,7 @@
   <h5><img src={location} style={{width:'12%'}}/>Location</h5>
   </div>
   <div className='col-xs-4'>
-   <img src={img1} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
+   <img src={img5} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
  </div>
  </div>
  </Paper>
@@ -90,7 +91,7 @@
  <h5><img src={location} style={{width:'12%'}}/>Location</h5>
  </div>
  <div className='col-xs-4'>
-  <img src={img1} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
+  <img src={img4} alt="image not found" style={{height:'100%',width:'100%', padding:'2px'}}/>
 </div>
 </div>
 </Paper>
